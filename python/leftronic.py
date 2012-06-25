@@ -4,7 +4,10 @@
 #    print 'Could not import eventlet. Please install eventlet on your machine if you wish to use our asynchronous API.'
 #    import urllib2
 import urllib2
-import json
+try:
+    import json
+except:
+    import simplejson as json
 
 try:
     from Crypto.Cipher import AES
@@ -293,5 +296,3 @@ class Leftronic(object):
 
             parameters['epoint'] = self.encryptText(json.dumps(parameters['point']))
             del parameters['point']
-
-
