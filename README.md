@@ -4,7 +4,7 @@ Leftronic API Documentation
 What is Leftronic?
 ------------------
 
-[Leftronic](https://beta.leftronic.com) makes powerful dashboards for business intelligence.
+[Leftronic](https://www.leftronic.com) makes powerful dashboards for business intelligence.
 
 * Colorful and interactive data visualizations
 * Templates to get you started right away
@@ -17,29 +17,30 @@ What is Leftronic?
 Technical Notes
 ---------------
 
-We also suggest checking out our [API](https://beta.leftronic.com/api) page. While the most detailed documentation is here, it has JSON and CURL examples in addition to a test form to send data to your custom widgets.
+We also suggest checking out our [API](https://www.leftronic.com/api) page. While the most detailed documentation is here, it has JSON and CURL examples in addition to a test form to send data to your custom widgets.
 
-Authentication is handled by your API access key. We strongly encourage you to keep this key private. If you're logged in, your key can be found on our [API](https://beta.leftronic.com/api) page. If you plan on using one of our API libraries, you will find instructions below on how to set your access key.
+Authentication is handled by your API access key. We strongly encourage you to keep this key private. If you're logged in, your key can be found on our [API](https://www.leftronic.com/api) page. If you plan on using one of our API libraries, you will find instructions below on how to set your access key.
 
-All API requests are made by sending a POST request to https://beta.leftronic.com/customSend with a properly formatted JSON packet. We do not support XML.
+All API requests are made by sending a POST request to https://www.leftronic.com/customSend/ with a properly formatted JSON packet. We do not support XML.
 
 Current API version is 1.0.
 
 Getting Started
 ---------------
 
-If you haven't already, create an account at https://beta.leftronic.com/accounts/login.
+If you haven't already, create an account at https://www.leftronic.com/accounts/login.
 
-Get your API access key from the API overview page at https://beta.leftronic.com/api.
+Get your API access key from the API overview page at https://www.leftronic.com/api.
 
-We recommend checking out our [Tutorials](https://beta.leftronic.com/tutorials) to familiarize yourself with your dashboard.
+We recommend checking out our [Tutorials](https://www.leftronic.com/tutorials) to familiarize yourself with your dashboard.
 
 Javascript
 ----------
 
 *Note*: Because Javascript is rendered by the browser, your API access key will be clearly visible in plain text. We recommend using our PHP, Python, or Ruby API libraries. If you need to use the Javascript API and have concerns about abuse or misuse of your private key, please feel free to send us an email at <support@leftronic.com>.
 
-Start by downloading the most recent version of our Javascript API at https://github.com/sonofabell/leftronic/blob/master/leftronic.js.
+Start by downloading the most recent version of our Javascript API at https://github.com/leftronic/leftronic/blob/master/javascript/leftronic.js.
+
 
 ### Dependencies
 
@@ -104,7 +105,7 @@ pushList("yourListStream", listArray);
 PHP
 ---
 
-Start by downloading the most recent version of our PHP API at https://github.com/sonofabell/leftronic/blob/master/leftronic.php. You only need `leftronic.php` and the `CAcerts` folder; the `test.html` and `pushNumber.php` are very simple integration examples.
+Start by downloading the most recent version of our PHP API at https://github.com/leftronic/leftronic/blob/master/leftronic.php. You only need `leftronic.php` and the `CAcerts` folder; the `test.html` and `pushNumber.php` are very simple integration examples.
 
 ### Dependencies
 
@@ -159,9 +160,9 @@ $update->pushList("yourListStream", $listArray);
 Python
 ------
 
-**_Note_**: We also have a Leftronic Python Package that offers the same functionality. You can download it on [Github](https://github.com/sonofabell/leftronic-python) or on the [Python Package Index](http://pypi.python.org/pypi/leftronic).
+**_Note_**: We also have a Leftronic Python Package that offers the same functionality. You can download it on [Github](https://github.com/leftronic/leftronic-python) or on the [Python Package Index](http://pypi.python.org/pypi/leftronic).
 
-Start by downloading the most recent version of our Python API at https://github.com/sonofabell/leftronic/blob/master/leftronic.py.
+Start by downloading the most recent version of our Python API at https://github.com/leftronic/leftronic/blob/master/leftronic.py.
 
 ### Dependencies
 
@@ -305,9 +306,9 @@ update.pushMultiple(multipush)
 Ruby
 ----
 
-**_Note_**: We also have a Leftronic Ruby Gem that offers the same functionality. You can download it on [Github](https://github.com/sonofabell/leftronic-ruby) or on [RubyGems](https://rubygems.org/gems/leftronicapi).
+**_Note_**: We also have a Leftronic Ruby Gem that offers the same functionality. You can download it on [Github](https://github.com/leftronic/leftronic-ruby) or on [RubyGems](https://rubygems.org/gems/leftronicapi).
 
-Start by downloading the most recent version of our Ruby API at https://github.com/sonofabell/leftronic/blob/master/leftronic.rb.
+Start by downloading the most recent version of our Ruby API at https://github.com/leftronic/leftronic/blob/master/leftronic.rb.
 
 ### Dependencies
 
