@@ -105,7 +105,7 @@ pushList("yourListStream", listArray);
 PHP
 ---
 
-Start by downloading the most recent version of our PHP API at https://github.com/leftronic/leftronic/blob/master/leftronic.php. You only need `leftronic.php` and the `CAcerts` folder; the `test.html` and `pushNumber.php` are very simple integration examples.
+Start by downloading the most recent version of our PHP API at https://github.com/leftronic/leftronic/blob/master/php/leftronic.php. You only need `leftronic.php` and the `CAcerts` folder; the `test.html` and `pushNumber.php` are very simple integration examples.
 
 ### Dependencies
 
@@ -162,7 +162,7 @@ Python
 
 **_Note_**: We also have a Leftronic Python Package that offers the same functionality. You can download it on [Github](https://github.com/leftronic/leftronic-python) or on the [Python Package Index](http://pypi.python.org/pypi/leftronic).
 
-Start by downloading the most recent version of our Python API at https://github.com/leftronic/leftronic/blob/master/leftronic.py.
+Start by downloading the most recent version of our Python API at https://github.com/leftronic/leftronic/blob/master/python/leftronic.py.
 
 ### Dependencies
 
@@ -308,7 +308,7 @@ Ruby
 
 **_Note_**: We also have a Leftronic Ruby Gem that offers the same functionality. You can download it on [Github](https://github.com/leftronic/leftronic-ruby) or on [RubyGems](https://rubygems.org/gems/leftronicapi).
 
-Start by downloading the most recent version of our Ruby API at https://github.com/leftronic/leftronic/blob/master/leftronic.rb.
+Start by downloading the most recent version of our Ruby API at https://github.com/leftronic/leftronic/blob/master/ruby/leftronic.rb.
 
 ### Dependencies
 
