@@ -256,7 +256,7 @@ class Leftronic(object):
         # Convert to JSON
         jsonData = json.dumps(parameters)
 
-        print jsonData
+        #print jsonData
         # Make request
         response = urllib2.urlopen(self.apiUrl, jsonData)
         return response.read()
