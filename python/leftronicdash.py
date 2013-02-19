@@ -1,5 +1,7 @@
 #!/usr/bin/env python
 
+from os import fork, chdir, setsid, umask
+from sys import exit
 from leftronic import Leftronic 
 import random, time
 
@@ -9,11 +11,28 @@ def updateLineChart(number):
 	update.pushNumber("nWJMk36I", number)
 
 def main():
-	#count = 0
 	while True:
 		number = random.randrange(1,100)
 		updateLineChart(number)
-		#count+=1
 		time.sleep(5)
+
+if __name__ == "__main__":
+	try:
+		pid = fork()
+		if pid>0:
+			exit(0)
+	except OSError, e:
+		exit(1)
+	chdir("/")
+	setsid()
+	umask(0)
+
+	try:
+		pid = fork()
+		if pid>0:
+			exit(0)
+	except OSError, e:
+		exit(1)
+
 
 main()
