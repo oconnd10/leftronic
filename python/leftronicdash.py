@@ -7,6 +7,9 @@ import random, time
 
 update = Leftronic("wIwPY46fAhaxv9gq2lxdcRah7YC8QUvM")
 
+def getDataFromSM2():
+#SM2 API goes here
+
 def updateLineChart(number):
 	update.pushNumber("nWJMk36I", number)
 
