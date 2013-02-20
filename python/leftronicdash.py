@@ -15,6 +15,9 @@ def updateLineChart(number):
 
 def main():
 	while True:
+		#get data from SM2 function
+		#pass it to the leftronic API
+		#sleep for set perios of time to avoid rate limits
 		number = random.randrange(1,100)
 		updateLineChart(number)
 		time.sleep(5)
