@@ -7,19 +7,24 @@ import random, time
 
 update = Leftronic("wIwPY46fAhaxv9gq2lxdcRah7YC8QUvM")
 
-def getDataFromSM2():
-#SM2 API goes here
-
-def updateLineChart(number):
-	update.pushNumber("nWJMk36I", number)
+def updateCharts():
+    number = random.randrange(1,100)
+    update.pushNumber("nWJMk36I", number)
+    number = random.randrange(1,100)
+    update.pushNumber("oCbSJpaF", number)
+    number = random.randrange(1,100)
+    update.pushNumber("DHKGwiRq", number)
+    number = random.randrange(1,100)
+    update.pushNumber("brgmlTxV", number)
+    number1 = random.randrange(1,100)
+    number2 = random.randrange(1,100)
+    update.pushPair("aPbTK98T", number1, number2)
 
 def main():
+	update.clear("aPbTK98T")
+	update.clear("brgmlTxV")
 	while True:
-		#get data from SM2 function
-		#pass it to the leftronic API
-		#sleep for set perios of time to avoid rate limits
-		number = random.randrange(1,100)
-		updateLineChart(number)
+		updateCharts()
 		time.sleep(5)
 
 if __name__ == "__main__":
